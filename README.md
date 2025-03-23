@@ -2,6 +2,10 @@
 
 This LaTeX package is prepared for immediate use on the Overleaf platform. It includes styles and macros necessary for creating modern curriculum vitae (CVs) using the `moderncv` template. This package aims to simplify the creation of visually appealing and professionally designed CVs.
 
+| Page 1       | Page 2       |
+|--------------|--------------|
+|  ![image](https://github.com/user-attachments/assets/38401fcd-6367-4e17-bdb5-65922d88e06d) | ![image](https://github.com/user-attachments/assets/fc29a5cc-89e4-46b9-a9a8-2b810242f26a) |
+
 ## ✨ Package Contents
 
 The package provides the necessary tools for creating CVs in the style of the `moderncv` template:
