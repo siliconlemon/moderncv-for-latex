@@ -1,6 +1,10 @@
 # moderncv-for-latex
 
-LaTeXový balík připravený k okamžitému použití na platformě Overleaf - obsahuje styly a makra nezbytná pro vytváření moderních životopisů (CV) s využitím šablony `moderncv`. Tento balík si klade za cíl usnadnit tvorbu vizuálně atraktivních a profesionálně vypadajících životopisů.
+LaTeXový balík připravený k okamžitému použití na platformě Overleaf - obsahuje styly a makra nezbytná pro vytváření moderních životopisů (CV).
+
+| První strana | Druhá strana |
+|--------------|--------------|
+|  ![image](https://github.com/user-attachments/assets/e2c167df-84af-4e42-9575-600618bea5e1) | ![image](https://github.com/user-attachments/assets/6774ccdd-4a19-4ffd-8655-8b50fc7ae9c7) |
 
 ## ✨ Co balík obsahuje?
 
