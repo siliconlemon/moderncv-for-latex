@@ -1,0 +1,60 @@
+\documentclass[CZ]{setup/moderncv}
+
+\begin{document}
+
+%% Titulní rámeček %%%
+\titlebox{example-image-a}{%
+    \name{Jan Novák}{Carpe Diem} % Jméno a povolání
+    \vspace{2em}
+    \email{jan.novak@mail.com} $\cdot$
+    \phone{+31 555 555 555} \par \vspace{0.5em}
+    \address{Praha 8, Česká Republika} $\cdot$
+    \github{https://github.com/}{JanNovak}
+}
+
+%%% Sekce na první straně (s postranním panelem) %%%
+\vspace*{-1em}
+\sidebarsection{
+    % Obsah postranního panelu
+    \vspace{0.6em}
+    \subsection*{Dovednosti}
+        \skill{Python}{0, 1, 2, 3}
+        \skill{Git}{0, 1, 2}
+        \skill{Linux}{0, 1, 2, 3}
+        \skill{Java}{0, 1, 2, 3, 4}
+        \skill{C++}{0, 1, 2, 3, 4}
+        \skill{LaTeX}{0, 1, 2, 3, 4}
+        
+    \subsection*{Jazyky}
+        \lan{Angličtina}{0, 1, 2, 3}
+        \lan{Španělština}{0, 1, 2, 3}
+        \lan{Dánština}{0, 1, 2, 3}
+}{
+    % Obsah hlavního panelu
+    \section*{Profil}
+        \lipsum[20]
+
+    \section*{Pracovní zkušenosti}
+        \work{Strojní inženýr}{Září 2026 - Říjen 2028}{Nějaká společnost}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+
+    \section*{Vzdělání}
+        \education{Mgr. inženýr v oboru Strojní inženýrství}{Září 2020 - Říjen 2024}{Stanfordova univerzita}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.} \vspace{2em}
+        \education{Bc. inženýr v oboru Elektrotechnika}{Září 2018 - Říjen 2020}{Stanfordova univerzita}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+}
+
+\clearpage
+
+%%% Sekce druhé strany (bez bočního panelu) %%%
+\nosidebarsection{
+
+    \section*{Publikace}
+        \publication{SplitPotato: Nový přístup k dělení bramborových chromozomů}{2. června 2022}{Stanfordova univerzita}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{https://scholar.google.com/}
+
+    \interests{
+        \interest{Intenzivní zírání na mraky}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+        \interest{Hledání pasujících víček od krabiček}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+        \interest{Kreativní využití kancelářských sponek}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+    }
+}
+        
+\end{document}

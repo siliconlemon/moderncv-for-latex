@@ -1,0 +1,61 @@
+\documentclass[EN]{setup/moderncv}
+
+\begin{document}
+
+%% Title Box %%%
+\titlebox{example-image-a}{%
+    \name{John Doe}{Carpe Diem} % Name and Profession
+    \vspace{2em}
+    \email{john.doe@mail.com} $\cdot$
+    \phone{+31 555 555 555} \par \vspace{0.5em}
+    \address{London, England} $\cdot$
+    \github{https://github.com/}{JohnDoe}
+}
+
+%%% First Page Sections (With Sidebar) %%%
+\vspace*{-1em}
+\sidebarsection{
+    % Sidebar content
+    \vspace{0.6em}
+    \subsection*{Skills}
+        \skill{Python}{0, 1, 2, 3}
+        \skill{Git}{0, 1, 2}
+        \skill{Linux}{0, 1, 2, 3}
+        \skill{Java}{0, 1, 2, 3, 4}
+        \skill{C++}{0, 1, 2, 3, 4}
+        \skill{LaTeX}{0, 1, 2, 3, 4}
+        
+    \subsection*{Languages}
+        \lan{English}{0, 1, 2, 3}
+        \lan{Spanish}{0, 1, 2, 3}
+        \lan{Danish}{0, 1, 2, 3}
+}{
+    % Main panel content
+    \section*{Profile}
+        \lipsum[20]
+
+    \section*{Work Experience}
+        \work{Mechanical Engineer}{Sep 2026 - Oct 2028}{Some Company}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+
+    \section*{Education}
+        \education{MSc in Mechanical Engineering}{Sep 2020 - Oct 2024}{Stanford University}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.} \vspace{2em}
+        \education{BSc in Electrical Engineering}{Sep 2018 - Oct 2020}{Stanford University}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+}
+
+\clearpage
+
+%%% Second Page Sections (No Sidebar) %%%
+\nosidebarsection{
+
+    \section*{Publications}
+        \publication{SplitPotato: A novel approach towards splitting potato chromosomes}{2 June 2022}{Stanford University}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{https://scholar.google.com/}
+
+    \interests{
+        \interest{Staring Intently at Clouds}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+        \interest{Finding Matching Tupperware Lids}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+        \interest{Creative Use of Paperclips}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+    }
+        
+}
+    
+\end{document}

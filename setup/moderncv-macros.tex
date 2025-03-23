@@ -1,0 +1,217 @@
+%%%%%% MACROS %%%%%%
+
+%%% Link With an Icon %%% 
+\newcommand{\link}[1]{
+    \href{#1}{\faIcon{link}}
+}
+
+%%% Name Formatting %%% 
+\newcommand{\name}[2]{
+    % Name
+    \Huge
+    \raggedright \texthead{\bfseries{#1}} \par
+
+    \vspace*{0.3cm}
+    
+    % Profession
+    \Large
+    \raggedright \texthead{#2} \par
+    \normalsize \normalfont
+}
+
+%%% Contact Details %%%
+\newcommand{\info}[2]{
+    \faIcon{#2} \hspace{0.2em} #1
+}
+
+%%% Email %%%
+\newcommand{\email}[1]{
+    \info{#1}{envelope}
+}
+
+%%% Phone Number %%%
+\newcommand{\phone}[1]{
+    \info{#1}{mobile-alt}
+}
+
+%%% Address %%%
+\newcommand{\address}[1]{
+    \info{#1}{map-marker-alt}
+}
+
+%%% GitHub %%%
+\newcommand{\github}[2]{
+    \info{\href{#1}{\underline{#2}}}{github}
+}
+
+%%% LinkedIn %%%
+\newcommand{\linkedin}[2]{
+    \info{\href{#1}{\underline{#2}}}{linkedin}
+}
+
+%%% Website %%%
+\newcommand{\website}[1]{
+    \info{#1}{link}
+}
+
+%%% Draw Skill Bars %%% 
+\newcommand{\drawskillbars}[1]{
+    \begin{tikzpicture}
+        % Draw 5 gray bars
+        \foreach \i in {0, 1, 2, 3, 4}{
+            \fill[lightgray] (\i * 0.7 + 0.2 *\i,0) rectangle (0.7 + \i * 0.7 + \i * 0.2,0.1);
+        }
+        
+        % Draw number of black bars depending on the skill level
+        \foreach \i in {#1}{
+            \fill[black] (\i * 0.7 + 0.2 *\i,0) rectangle (0.7 + \i * 0.7 + \i * 0.2,0.1);
+        }
+    \end{tikzpicture} \par
+}
+    
+%%% Skill %%%
+\newcommand{\skill}[2]{
+    \vspace{0.3em}
+    % Name of the skill
+    \raggedright
+    \noindent \hangafter=0
+    \textmd{#1}
+    \normalsize \par 
+    % Skill bars
+    \drawskillbars{#2}
+    \vspace{0.6em}
+}
+
+%%% Language %%%
+\newcommand{\lan}[2]{
+    \vspace{0.3em}
+    % Name of the language
+    \raggedright
+    \noindent \hangafter=0
+    \textmd{#1}
+    % Knowledge level
+    \drawskillbars{#2}
+    \vspace{0.6em}
+}
+
+%%% Interest %%%
+\newcommand{\interest}[2]{
+    \begin{minipage}{0.95\linewidth} % Reduced width to add whitespace on the right
+        % Name of the Interest
+        \noindent \large \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+        {\texthead{#1}} \par
+        % Description
+        \vspace*{0.5em} \color{black}
+        \normalsize #2
+        \normalsize \par
+        \vspace{5.5mm}
+    \end{minipage}
+}
+
+%%% Title Box %%%
+% #1: picture path (leave empty to omit), #2: rest of the info
+\newcommand{\titlebox}[2]{
+    \tcbset{colframe=title,colback=title,arc=0mm}
+    \begin{tcolorbox}
+        \begin{minipage}{0.3\textwidth} % Picture Area
+            \ifthenelse{\NOT\equal{#1}{}}{ % Check if picture path is not empty
+                \vspace{0.5em}
+                \includegraphics[width=\textwidth]{#1} % Picture
+                \vspace{-0.7em}
+            }{}
+        \end{minipage} \hfill
+        \begin{minipage}{0.65\textwidth} % Name and Contact Info
+            #2
+        \end{minipage}
+    \end{tcolorbox}
+}
+
+%%% Work Experience %%%
+\newcommand{\work}[4]{
+    % Name of the Job
+    \vspace{-0.4em}
+    \noindent \large \parbox{.7\linewidth}{\texthead{#1}}
+    % Duration in a Box 
+    \hfill \small
+    \tcbox[enhanced,box align=base,nobeforeafter,colback=title,colframe=title,size=fbox,arc=0mm]{\texthead{#2}} \par
+    \vspace{0.3em}
+    % Name of the Employer
+    \noindent \large \color{highlight} \parbox{.7\linewidth}{\textsl{\texthead{#3}}} \par
+    % Description of the job
+    \vspace*{0.4em} \color{black}
+    \normalsize #4 
+    \normalsize \par
+}
+
+%%% Education %%%
+\newcommand{\education}[4]{
+    % Name of the studies
+    \vspace{-0.4em}
+    \noindent \large \parbox{.7\linewidth}{\texthead{#1}}
+    % Duration in a Box
+    \hfill \small
+    \tcbox[enhanced,box align=base,nobeforeafter,colback=title,colframe=title,size=fbox,arc=0mm]{\texthead{#2}} \par
+    \vspace{0.3em}
+    % School Name 
+    \large
+    \noindent \color{highlight} \parbox{.7\linewidth}{\textsl{\texthead{#3}}} \par
+    % Description
+    \normalsize \color{black}
+    \vspace*{0.4em}
+    \normalsize #4 
+    \normalsize \par
+}
+
+%%% Publications %%%
+\newcommand{\publication}[5]{
+    % Title
+    \vspace{-0.4em}
+    \noindent \large \parbox{.8\linewidth}{\texthead{#1} \link{#5}}
+    % Publication Date
+    \hfill \small
+    \tcbox[enhanced,box align=base,nobeforeafter,colback=title,colframe=title,size=fbox,arc=0mm]{\texthead{#2}} \par
+    \vspace{0.5em}
+    % Institution
+    \large
+    \noindent \color{highlight} \parbox{.7\linewidth}{\textsl{\texthead{#3}}} \par
+    % Description
+    \vspace*{0.5em} \color{black}
+    \normalsize \textit{#4} \par
+    \normalsize \par 
+}
+
+%%% Interests %%%
+\newcommand{\interests}[1]{
+    \section*{Interests}
+    \vspace{-0.5mm}
+    \begin{multicols}{2}
+        #1
+    \end{multicols}
+}
+
+%%% Section With Sidebar %%%
+% #1: sidebar content, #2: main panel content
+\newcommand{\sidebarsection}[2]{
+    \tcbset{colframe=white,colback=white,arc=0mm, height=0.8\textheight}
+    \begin{tcolorbox}
+        \vspace*{-0.5em}
+        \begin{minipage}[t]{0.3\textwidth} % Side Panel
+            \begin{tcolorbox}[height=0.8\textheight, grow to left by=5.6mm,colback=backdrop,colframe=backdrop,arc=0mm]
+                #1
+            \end{tcolorbox}
+        \end{minipage}
+        \begin{minipage}[t]{0.7\textwidth} % Main Panel
+            \begin{tcolorbox}[grow to right by=0.75cm,height=0.8\textheight,colframe=white,colback=white]
+                #2
+            \end{tcolorbox}
+        \end{minipage}
+    \end{tcolorbox}
+}
+
+%%% Section Without a Sidebar %%%
+% #1: main panel content
+\newcommand{\nosidebarsection}[1]{
+    \begin{tcolorbox}
+        #1
+    \end{tcolorbox}
+}
