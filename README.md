@@ -1,6 +1,6 @@
 # moderncv-for-latex
 
-This LaTeX package is prepared for immediate use on the Overleaf platform. It includes styles and macros necessary for creating modern curriculum vitae (CVs) using the `moderncv` template. This package aims to simplify the creation of visually appealing and professionally designed CVs.
+This LaTeX package is prepared for immediate use on the Overleaf platform. It includes styles and macros necessary for creating modern curriculum vitae (CVs/resumes).
 
 | Page 1       | Page 2       |
 |--------------|--------------|
