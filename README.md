@@ -4,7 +4,7 @@ This LaTeX package is prepared for immediate use on the Overleaf platform. It in
 
 | Page 1       | Page 2       |
 |--------------|--------------|
-|  ![image](https://github.com/user-attachments/assets/38401fcd-6367-4e17-bdb5-65922d88e06d) | ![image](https://github.com/user-attachments/assets/fc29a5cc-89e4-46b9-a9a8-2b810242f26a) |
+| ![Screenshot 2025-03-24 011353](https://github.com/user-attachments/assets/41e3e9d4-2086-492e-b783-8ddc5aa4eb47) | ![Screenshot 2025-03-24 011420](https://github.com/user-attachments/assets/7d43cb88-22cd-4dc4-ac67-7be0ac74259e) |
 
 ## ✨ Package Contents
 
@@ -56,26 +56,28 @@ This class is based on the original `moderncv` template and may contain specific
 
 This file contains macro definitions that simplify the creation of your CV content. These include:
 
-* `\link{}`: Macro for inserting a link with an icon.
-* `\name{}`: Macro for formatting the name and profession.
-* `\info{}`: Basic macro for inserting contact information with an icon.
-* `\email{}`: Macro for inserting an email address.
-* `\phone{}`: Macro for inserting a phone number.
-* `\address{}`: Macro for inserting an address.
-* `\github{}`: Macro for inserting a link to a GitHub profile.
-* `\linkedin{}`: Macro for inserting a link to a LinkedIn profile.
-* `\website{}`: Macro for inserting a link to a website.
-* `\drawskillbars{}`: Macro for drawing graphical skill level representations.
-* `\skill{}`: Macro for inserting a skill with a graphical level representation.
-* `\lan{}`: Macro for inserting a language with a graphical proficiency level.
-* `\interest{}`: Macro for inserting an interest.
-* `\titlebox{}`: Macro for creating the initial information box.
-* `\work{}`: Macro for inserting work experience.
-* `\education{}`: Macro for inserting education.
-* `\publication{}`: Macro for inserting a publication.
-* `\interests{}`: Macro for inserting the interests section in columns.
-* `\sidebarsection{}`: Macro for creating a sidebar section.
-* `\nosidebarsection{}`: Macro for creating a section without a sidebar.
+* `\link{}`: Inserts a link with an icon.
+* `\name{}`: Formats the name and profession.
+* `\info{}`: Basic function for inserting contact information with an icon.
+* `\email{}`: Inserts an email address.
+* `\phone{}`: Inserts a phone number.
+* `\address{}`: Inserts an address.
+* `\github{}`: Inserts a link to a GitHub profile.
+* `\linkedin{}`: Inserts a link to a LinkedIn profile.
+* `\website{}`: Inserts a link to a website.
+* `\drawskillbars{}`: Draws graphical skill level representations.
+* `\skill{}`: Inserts a skill with a graphical level representation.
+* `\lan{}`: Inserts a language with a graphical proficiency level.
+* `\interest{}`: Inserts an interest. Compatible with `\twocolsection`.
+* `\titlebox{}`: Creates the initial information box.
+* `\work{}`: Inserts work experience.
+* `\education{}`: Inserts education.
+* `\publication{}`: Inserts a publication.
+* `\twocolsection{}`: Creates a section with content arranged in two columns.
+* `\sidebarsection{}`: Creates a sidebar section.
+* `\nosidebarsection{}`: Creates a section without a sidebar.
+* `\onecolsection{}`: Creates a section that spans one column.
+* `\project{}`: Inserts a project. Compatible with `\twocolsection`.
 
 ## 📝 Getting Started
 
