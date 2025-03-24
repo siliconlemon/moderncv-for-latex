@@ -4,7 +4,7 @@ LaTeXový balík připravený k okamžitému použití na platformě Overleaf - 
 
 | První strana | Druhá strana |
 |--------------|--------------|
-|  ![image](https://github.com/user-attachments/assets/e2c167df-84af-4e42-9575-600618bea5e1) | ![image](https://github.com/user-attachments/assets/6774ccdd-4a19-4ffd-8655-8b50fc7ae9c7) |
+| ![Screenshot 2025-03-24 011521](https://github.com/user-attachments/assets/b3a32912-59eb-4b51-9e2d-6c0b6f60a8aa) | ![Screenshot 2025-03-24 011546](https://github.com/user-attachments/assets/0714e6e3-50e0-42d7-91cf-f65899f68f3c) |
 
 ## ✨ Co balík obsahuje?
 
@@ -53,26 +53,27 @@ Tato třída vychází z původní šablony `moderncv` a může obsahovat specif
 
 Tento soubor obsahuje definice maker, které usnadňují vytváření obsahu vašeho životopisu. Patří mezi ně:
 
-* `\link{}`: Makro pro vložení odkazu s ikonou.
-* `\name{}`: Makro pro formátování jména a profese.
-* `\info{}`: Základní makro pro vložení kontaktních informací s ikonou.
-* `\email{}`: Makro pro vložení e-mailové adresy.
-* `\phone{}`: Makro pro vložení telefonního čísla.
-* `\address{}`: Makro pro vložení adresy.
-* `\github{}`: Makro pro vložení odkazu na GitHub profil.
-* `\linkedin{}`: Makro pro vložení odkazu na LinkedIn profil.
-* `\website{}`: Makro pro vložení odkazu na webovou stránku.
-* `\drawskillbars{}`: Makro pro vykreslení grafických znázornění úrovně dovedností.
-* `\skill{}`: Makro pro vložení dovednosti s grafickým znázorněním úrovně.
-* `\lan{}`: Makro pro vložení jazyka s grafickým znázorněním úrovně znalosti.
-* `\interest{}`: Makro pro vložení zájmu.
-* `\titlebox{}`: Makro pro vytvoření úvodního rámečku s informacemi.
-* `\work{}`: Makro pro vložení pracovní zkušenosti.
-* `\education{}`: Makro pro vložení vzdělání.
-* `\publication{}`: Makro pro vložení publikace.
-* `\interests{}`: Makro pro vložení sekce zájmů ve sloupcích.
-* `\sidebarsection{}`: Makro pro vytvoření sekce s bočním panelem.
-* `\nosidebarsection{}`: Makro pro vytvoření sekce bez bočního panelu.
+* `\link{}`: Vkládá odkaz s ikonou.
+* `\name{}`: Formátuje jméno a profesi.
+* `\info{}`: Základní funkce pro vložení kontaktních informací s ikonou.
+* `\email{}`: Vkládá e-mailovou adresu.
+* `\phone{}`: Vkládá telefonní číslo.
+* `\address{}`: Vkládá adresu.
+* `\github{}`: Vkládá odkaz na GitHub profil.
+* `\linkedin{}`: Vkládá odkaz na LinkedIn profil.
+* `\website{}`: Vkládá odkaz na webovou stránku.
+* `\drawskillbars{}`: Vykreslí grafické znázornění úrovně dovedností.
+* `\skill{}`: Vkládá dovednost s grafickým znázorněním úrovně.
+* `\lan{}`: Vkládá jazyk s grafickým znázorněním úrovně znalosti.
+* `\interest{}`: Vkládá zájem. Kompatibilní s `\twocolsection`.
+* `\titlebox{}`: Vytvoří úvodní rámeček s informacemi.
+* `\work{}`: Vkládá pracovní zkušenost.
+* `\education{}`: Vkládá vzdělání.
+* `\publication{}`: Vkládá publikaci.
+* `\interests{}`: Vkládá sekci zájmů ve sloupcích.
+* `\sidebarsection{}`: Vytvoří sekci s bočním panelem.
+* `\nosidebarsection{}`: Vytvoří sekci bez bočního panelu.
+* `\project{}`: Vkládá projekt. Kompatibilní s `\twocolsection`.
 
 ## 📝 Jak začít s používáním?
 
