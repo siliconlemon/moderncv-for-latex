@@ -1,5 +1,7 @@
 \documentclass[CZ]{setup/moderncv}
 
+\usepackage{xcolor} % Make sure xcolor is loaded for \textcolor
+
 \begin{document}
 
 %% Titulní rámeček %%%
@@ -31,15 +33,18 @@
         \lan{Dánština}{0, 1, 2, 3}
 }{
     % Obsah hlavního panelu
-    \section*{Profil}
+    \onecolsection{Profil}{
         \lipsum[20]
+    }        
 
-    \section*{Pracovní zkušenosti}
-        \work{Strojní inženýr}{Září 2026 - Říjen 2028}{Nějaká společnost}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+    \onecolsection{Pracovní zkušenosti}{
+        \work{Strojní inženýr}{Září 2026 - Říjen 2028}{Nějaká společnost}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{https://github.com/}
+    }
 
-    \section*{Vzdělání}
-        \education{Mgr. inženýr v oboru Strojní inženýrství}{Září 2020 - Říjen 2024}{Stanfordova univerzita}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.} \vspace{2em}
-        \education{Bc. inženýr v oboru Elektrotechnika}{Září 2018 - Říjen 2020}{Stanfordova univerzita}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+    \onecolsection{Vzdělání}{
+        \education{Mgr. inženýr v oboru Strojní inženýrství}{Září 2020 - Říjen 2024}{Stanfordova univerzita}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{https://github.com/} \vspace{2em}
+        \education{Bc. inženýr v oboru Elektrotechnika}{Září 2018 - Říjen 2020}{Stanfordova univerzita}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{https://github.com/}
+    }
 }
 
 \clearpage
@@ -47,14 +52,20 @@
 %%% Sekce druhé strany (bez bočního panelu) %%%
 \nosidebarsection{
 
-    \section*{Publikace}
+    \onecolsection{Publikace}{
         \publication{SplitPotato: Nový přístup k dělení bramborových chromozomů}{2. června 2022}{Stanfordova univerzita}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{https://scholar.google.com/}
+    }
 
-    \interests{
-        \interest{Intenzivní zírání na mraky}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
-        \interest{Hledání pasujících víček od krabiček}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
-        \interest{Kreativní využití kancelářských sponek}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}
+    \twocolsection{Projekty}{
+        \project{Automatizovaný systém třídění ponožek}{Univerzitní projekt}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{https://github.com/}
+        \project{Samozavlažování pokojových rostlin}{Osobní projekt}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{}
+    }
+
+    \twocolsection{Zájmy}{
+        \interest{Intenzivní zírání na mraky}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{https://github.com/}
+        \interest{Hledání pasujících víček od krabiček}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{}
+        \interest{Kreativní využití kancelářských sponek}{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla ac nisl. Nullam urna nulla, ullamcorper in, interdum sit amet, gravida ut, risus.}{}
     }
 }
-        
+
 \end{document}

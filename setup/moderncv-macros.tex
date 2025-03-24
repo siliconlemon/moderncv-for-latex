@@ -61,7 +61,6 @@
         \foreach \i in {0, 1, 2, 3, 4}{
             \fill[lightgray] (\i * 0.7 + 0.2 *\i,0) rectangle (0.7 + \i * 0.7 + \i * 0.2,0.1);
         }
-        
         % Draw number of black bars depending on the skill level
         \foreach \i in {#1}{
             \fill[black] (\i * 0.7 + 0.2 *\i,0) rectangle (0.7 + \i * 0.7 + \i * 0.2,0.1);
@@ -94,20 +93,6 @@
     \vspace{0.6em}
 }
 
-%%% Interest %%%
-\newcommand{\interest}[2]{
-    \begin{minipage}{0.95\linewidth} % Reduced width to add whitespace on the right
-        % Name of the Interest
-        \noindent \large \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
-        {\texthead{#1}} \par
-        % Description
-        \vspace*{0.5em} \color{black}
-        \normalsize #2
-        \normalsize \par
-        \vspace{5.5mm}
-    \end{minipage}
-}
-
 %%% Title Box %%%
 % #1: picture path (leave empty to omit), #2: rest of the info
 \newcommand{\titlebox}[2]{
@@ -127,24 +112,26 @@
 }
 
 %%% Work Experience %%%
-\newcommand{\work}[4]{
+\newcommand{\work}[5]{
     % Name of the Job
     \vspace{-0.4em}
     \noindent \large \parbox{.7\linewidth}{\texthead{#1}}
-    % Duration in a Box 
+    % Duration in a Box
     \hfill \small
     \tcbox[enhanced,box align=base,nobeforeafter,colback=title,colframe=title,size=fbox,arc=0mm]{\texthead{#2}} \par
     \vspace{0.3em}
     % Name of the Employer
-    \noindent \large \color{highlight} \parbox{.7\linewidth}{\textsl{\texthead{#3}}} \par
+    \noindent \large \color{highlight} \parbox{.7\linewidth}{\textsl{\texthead{#3}
+    \ifthenelse{\NOT\equal{#5}{}}{\normalsize{\link{#5}}}{} }} \par
     % Description of the job
     \vspace*{0.4em} \color{black}
-    \normalsize #4 
+    \normalsize #4
     \normalsize \par
 }
 
+
 %%% Education %%%
-\newcommand{\education}[4]{
+\newcommand{\education}[5]{
     % Name of the studies
     \vspace{-0.4em}
     \noindent \large \parbox{.7\linewidth}{\texthead{#1}}
@@ -152,21 +139,22 @@
     \hfill \small
     \tcbox[enhanced,box align=base,nobeforeafter,colback=title,colframe=title,size=fbox,arc=0mm]{\texthead{#2}} \par
     \vspace{0.3em}
-    % School Name 
+    % School Name
     \large
-    \noindent \color{highlight} \parbox{.7\linewidth}{\textsl{\texthead{#3}}} \par
+    \noindent \color{highlight} \parbox{.7\linewidth}{\textsl{\texthead{#3}
+    \ifthenelse{\NOT\equal{#5}{}}{\normalsize{\link{#5}}}{} }} \par
     % Description
     \normalsize \color{black}
     \vspace*{0.4em}
-    \normalsize #4 
+    \normalsize #4
     \normalsize \par
 }
 
-%%% Publications %%%
+%%% Publication %%%
 \newcommand{\publication}[5]{
     % Title
     \vspace{-0.4em}
-    \noindent \large \parbox{.8\linewidth}{\texthead{#1} \link{#5}}
+    \noindent \large \parbox{.8\linewidth}{\texthead{#1} \normalsize{\link{#5}}}
     % Publication Date
     \hfill \small
     \tcbox[enhanced,box align=base,nobeforeafter,colback=title,colframe=title,size=fbox,arc=0mm]{\texthead{#2}} \par
@@ -180,12 +168,58 @@
     \normalsize \par 
 }
 
-%%% Interests %%%
-\newcommand{\interests}[1]{
-    \section*{Interests}
+%%% Project %%%
+% Compatible with \twocolsection
+\newcommand{\project}[4]{
+    \begin{minipage}{0.95\linewidth}
+        % Title of the Project with optional link
+        \noindent \large \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+        {\texthead{#1} \ifthenelse{\NOT\equal{#4}{}}{\normalsize{\link{#4}}}{}} \par
+        % Context
+        \vspace*{0.3em}
+        \color{black}
+        \ifx\\#2\\
+            \vspace*{0.3em}
+        \else
+            \noindent \large \color{highlight} \parbox{.7\linewidth}{\textsl{\texthead{#2}}} \par
+            \vspace*{0.5em} \color{black}
+        \fi
+        % Description
+        \normalsize #3
+        \normalsize \par
+        \vspace{5.5mm}
+    \end{minipage}
+}
+
+%%% Interest %%%
+% Compatible with \twocolsection
+\newcommand{\interest}[3]{
+    \begin{minipage}{0.95\linewidth}
+        % Name of the Interest with optional link
+        \noindent \large \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+        {\texthead{#1} \ifthenelse{\NOT\equal{#3}{}}{\normalsize{\link{#3}}}{}} \par
+        % Description
+        \vspace*{0.5em} \color{black}
+        \normalsize #2
+        \normalsize \par
+        \vspace{5.5mm}
+    \end{minipage}
+}
+
+%%% One Column Section %%%
+\newcommand{\onecolsection}[2]{
+    \section*{#1}
+    \begin{minipage}{0.985\linewidth}
+        #2
+    \end{minipage}
+}
+
+%%% Two Column Section %%%
+\newcommand{\twocolsection}[2]{
+    \section*{#1}
     \vspace{-0.5mm}
     \begin{multicols}{2}
-        #1
+        #2
     \end{multicols}
 }
 
