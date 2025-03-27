@@ -53,26 +53,26 @@ Tato třída vychází z původní šablony `moderncv` a může obsahovat specif
 
 Tento soubor obsahuje definice maker, které usnadňují vytváření obsahu vašeho životopisu. Patří mezi ně:
 
-* `\link{}`: Vkládá odkaz s ikonou
-* `\name{}`: Formátuje jméno a profesi
-* `\info{}`: Základní funkce pro vložení kontaktních informací s ikonou
-* `\email{}`: Vkládá e-mailovou adresu
-* `\phone{}`: Vkládá telefonní číslo
-* `\address{}`: Vkládá adresu
-* `\github{}`: Vkládá odkaz na GitHub profil
-* `\linkedin{}`: Vkládá odkaz na LinkedIn profil
-* `\website{}`: Vkládá odkaz na webovou stránku
-* `\drawskillbars{}`: Vykreslí grafické znázornění úrovně dovedností
-* `\skill{}`: Vkládá dovednost s grafickým znázorněním úrovně
-* `\lan{}`: Vkládá jazyk s grafickým znázorněním úrovně znalosti
-* `\interest{}`: Vkládá zájem. Kompatibilní s `\twocolsection`
-* `\project{}`: Vkládá projekt. Kompatibilní s `\twocolsection`
-* `\work{}`: Vkládá pracovní zkušenost
-* `\education{}`: Vkládá vzdělání
-* `\publication{}`: Vkládá publikaci
-* `\titlebox{}`: Vytvoří úvodní rámeček s informacemi 
-* `\sidebarsection{}`: Vytvoří sekci s bočním panelem
-* `\nosidebarsection{}`: Vytvoří sekci bez bočního panelu
+* `\link`: Vkládá odkaz s ikonou
+* `\name`: Formátuje jméno a profesi
+* `\info`: Základní funkce pro vložení kontaktních informací s ikonou
+* `\email`: Vkládá e-mailovou adresu
+* `\phone`: Vkládá telefonní číslo
+* `\address`: Vkládá adresu
+* `\github`: Vkládá odkaz na GitHub profil
+* `\linkedin`: Vkládá odkaz na LinkedIn profil
+* `\website`: Vkládá odkaz na webovou stránku
+* `\drawskillbars`: Vykreslí grafické znázornění úrovně dovedností
+* `\skill`: Vkládá dovednost s grafickým znázorněním úrovně
+* `\lan`: Vkládá jazyk s grafickým znázorněním úrovně znalosti
+* `\interest`: Vkládá zájem. Kompatibilní s `\twocolsection`
+* `\project`: Vkládá projekt. Kompatibilní s `\twocolsection`
+* `\work`: Vkládá pracovní zkušenost
+* `\education`: Vkládá vzdělání
+* `\publication`: Vkládá publikaci
+* `\titlebox`: Vkládá úvodní rámeček s informacemi 
+* `\sidebarsection`: Vkládá sekci s bočním panelem
+* `\nosidebarsection`: Vkládá sekci bez bočního panelu
 * `\onecolsection`: Vnitnitřní sekce s jedním sloupcem
 * `\twocolsection`: Vnitřní sekce se dvěma sloupci
 
