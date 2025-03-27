@@ -87,7 +87,7 @@
     UprightFont=Archivo-VariableFont.ttf,
     UprightFeatures={Weight=500},
     ItalicFont=Archivo-Italic-VariableFont.ttf,
-    ItalicFeatures={Weight=550},
+    ItalicFeatures={Weight=520},
     BoldFont=Archivo-VariableFont.ttf,
     BoldFeatures={Weight=650},
     BoldItalicFont=Archivo-Italic-VariableFont.ttf,
