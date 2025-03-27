@@ -35,17 +35,18 @@ This class is based on the original `moderncv` template and may contain specific
 
 | Package      | Description                                   |
 |--------------|-----------------------------------------------|
-| `fontawesome5` | Font icons                                |
+| `fontawesome5` | Font icons                                    |
 | `graphicx`   | Inclusion of images                           |
-| `tcolorbox`  | Creating colored boxes                       |
+| `tcolorbox`  | Creating colored boxes                        |
 | `xcolor`     | Definition and use of colors                  |
-| `tikz`       | Vector graphics                            |
+| `tikz`       | Vector graphics                               |
 | `hyperref`   | Creation of hyperlinks in PDF documents       |
+| `ulem`       | Better underlining for links                  |
 | `ifthen`     | Conditional commands                          |
-| `multicol`   | Multi-column text                           |
-| `geometry`   | Page layout settings                        |
-| `sectsty`    | Section and subsection styling              |
-| `fontspec`   | Advanced font selection                     |
+| `multicol`   | Multi-column text                             |
+| `geometry`   | Page layout settings                          |
+| `sectsty`    | Section and subsection styling                |
+| `fontspec`   | Advanced font selection                       |
 | `lipsum` (optional) | For generating dummy text                 |
 
 **Available Configuration Options (taken from your initial example):**

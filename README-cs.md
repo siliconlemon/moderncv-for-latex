@@ -32,18 +32,19 @@ Tato třída vychází z původní šablony `moderncv` a může obsahovat specif
 
 | Balík        | Popis                                       |
 |--------------|---------------------------------------------|
-| `fontawesome5` | Ikony písem                                |
+| `fontawesome5` | Ikony písem                                 |
 | `graphicx`   | Vkládání obrázků                            |
-| `tcolorbox`  | Vytváření barevných rámečků                  |
+| `tcolorbox`  | Vytváření barevných rámečků                 |
 | `xcolor`     | Definice a použití barev                    |
-| `tikz`       | Vektorová grafika                          |
+| `tikz`       | Vektorová grafika                           |
 | `hyperref`   | Vytváření hypertextových odkazů v PDF dokumentu |
+| `ulem`       | Lepší podtržení hypertextových odkazů       |
 | `ifthen`     | Podmíněné příkazy                           |
 | `multicol`   | Vícesloupcový text                          |
 | `geometry`   | Nastavení okrajů stránky                    |
-| `sectsty`    | Úprava vzhledu sekcí a podsekcí            |
-| `fontspec`   | Práce s pokročilými fonty                  |
-| `lipsum` (volitelné) | Pro generování zkušebního textu             |
+| `sectsty`    | Úprava vzhledu sekcí a podsekcí             |
+| `fontspec`   | Práce s pokročilými fonty                   |
+| `lipsum` (volitelné) | Pro generování zkušebního textu           |
 
 **Dostupné možnosti nastavení (převzaté z vašeho úvodního příkladu):**
 

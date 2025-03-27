@@ -50,6 +50,7 @@
 %%% Miscellaneous %%%
 \usepackage{lipsum}
 \usepackage[colorlinks=true, urlcolor=black, pdfborder={0 0 0}]{hyperref}
+\usepackage{ulem}
 \usepackage{ifthen}
 \usepackage{multicol}
 
