@@ -4,7 +4,7 @@ This LaTeX package is prepared for immediate use on the Overleaf platform. It in
 
 | Page 1       | Page 2       |
 |--------------|--------------|
-| ![Screenshot 2025-03-24 011353](https://github.com/user-attachments/assets/41e3e9d4-2086-492e-b783-8ddc5aa4eb47) | ![Screenshot 2025-03-24 011420](https://github.com/user-attachments/assets/7d43cb88-22cd-4dc4-ac67-7be0ac74259e) |
+| ![image](https://github.com/user-attachments/assets/8f73e866-d19d-4f2b-803d-68e20ba64e7d) | ![image](https://github.com/user-attachments/assets/591daa49-4d1c-4951-b22d-8ccb1d8319da) |
 
 ## ✨ Package Contents
 
