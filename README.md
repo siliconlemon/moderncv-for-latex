@@ -56,35 +56,35 @@ This class is based on the original `moderncv` template and may contain specific
 
 This file contains macro definitions that simplify the creation of your CV content. These include:
 
-* `\link{}`: Inserts a link with an icon.
-* `\name{}`: Formats the name and profession.
-* `\info{}`: Basic function for inserting contact information with an icon.
-* `\email{}`: Inserts an email address.
-* `\phone{}`: Inserts a phone number.
-* `\address{}`: Inserts an address.
-* `\github{}`: Inserts a link to a GitHub profile.
-* `\linkedin{}`: Inserts a link to a LinkedIn profile.
-* `\website{}`: Inserts a link to a website.
-* `\drawskillbars{}`: Draws graphical skill level representations.
-* `\skill{}`: Inserts a skill with a graphical level representation.
-* `\lan{}`: Inserts a language with a graphical proficiency level.
-* `\interest{}`: Inserts an interest. Compatible with `\twocolsection`.
-* `\titlebox{}`: Creates the initial information box.
-* `\work{}`: Inserts work experience.
-* `\education{}`: Inserts education.
-* `\publication{}`: Inserts a publication.
-* `\twocolsection{}`: Creates a section with content arranged in two columns.
-* `\sidebarsection{}`: Creates a sidebar section.
-* `\nosidebarsection{}`: Creates a section without a sidebar.
-* `\onecolsection{}`: Creates a section that spans one column.
-* `\project{}`: Inserts a project. Compatible with `\twocolsection`.
+* `\link`: Inserts a link with an icon
+* `\name`: Formats the name and profession
+* `\info`: Basic function for inserting contact information with an icon
+* `\email`: Inserts an email address
+* `\phone`: Inserts a phone number
+* `\address`: Inserts an address
+* `\github`: Inserts a link to a GitHub profile
+* `\linkedin`: Inserts a link to a LinkedIn profile
+* `\website`: Inserts a link to a website
+* `\skill`: Inserts a skill with a graphical level representation
+* `\drawskillbars`: Draws graphical skill level representations
+* `\lan`: Inserts a language with a graphical proficiency level
+* `\interest`: Inserts an interest. Compatible with `\twocolsection`
+* `\project`: Inserts a project. Compatible with `\twocolsection`
+* `\work`: Inserts work experience
+* `\education`: Inserts education
+* `\publication`: Inserts a publication
+* `\titlebox`: Creates the initial information box
+* `\sidebarsection`: Creates a sidebar section
+* `\nosidebarsection`: Creates a section without a sidebar
+* `\onecolsection`: Creates an inner section that spans one colum
+* `\twocolsection`: Creates an inner section with content arranged in two columns
 
 ## 📝 Getting Started
 
 Example `.tex` files illustrating the functionality of the package are included:
 
-* `main-en.tex`: Example of usage in English.
-* `main-cz.tex`: Example of usage in Czech.
+* `main-en.tex`: Example of usage in English
+* `main-cz.tex`: Example of usage in Czech
 
 These files primarily demonstrate how to use the template. Greater customization of the appearance can be achieved by modifying the `moderncv.cls` and `moderncv-macros.tex` files.
 
